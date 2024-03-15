@@ -1,0 +1,26 @@
+.post {
+  background-color: gainsboro;
+  width: 100%;
+  padding: 50px 100px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

@@ -1,0 +1,33 @@
+.container {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  padding: 5%;
+}
+
+.list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.search {
+  all: unset;
+  background-color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1650px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

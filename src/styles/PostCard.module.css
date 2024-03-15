@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Show an ellipsis (...) when the content overflows */
+}
