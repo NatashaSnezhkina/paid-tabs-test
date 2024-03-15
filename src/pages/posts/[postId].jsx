@@ -5,7 +5,6 @@ import styles from "../../styles/Post.module.css";
 import { IoChevronBackOutline } from "react-icons/io5";
 
 function Post({ post }) {
-  console.log("post", post);
   return (
     <div className={styles.post}>
       <Link href="/posts" className={styles.backButton}>
@@ -31,7 +30,6 @@ function Post({ post }) {
 
 export async function getServerSideProps(context) {
   const { postId } = context.params;
-  console.log(context);
   if (!postId) {
     return {
       notFound: true, // Return 404 if postId is not defined

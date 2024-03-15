@@ -6,7 +6,6 @@ import styles from "../../styles/PostsList.module.css";
 function Posts({ posts }) {
   const [filteredPosts, setFilteredPosts] = useState([]);
   const [isSearched, setIsSearched] = useState(false);
-  console.log("posts", posts);
   const handleSearch = (event) => {
     event.preventDefault();
     const value = event.target.value.toLowerCase();

@@ -32,8 +32,6 @@ function LoginForm() {
     }, 2000);
   }
 
-  console.log(loading, !username, !password);
-
   return (
     <div className={styles.container}>
       <h1 className={styles.h1}>Sign in to PaidTabs</h1>
